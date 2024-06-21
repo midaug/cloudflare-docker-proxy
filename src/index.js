@@ -6,7 +6,7 @@ addEventListener("fetch", (event) => {
 const dockerHub = "https://registry-1.docker.io";
 
 const routes = {
-  "docker.midaug.link": dockerHub
+  "${workername}.${username}.workers.dev/": dockerHub,
 };
 
 function routeByHosts(host) {
@@ -50,12 +50,12 @@ async function handleRequest(request) {
       if (MODE == "debug") {
         headers.set(
           "Www-Authenticate",
-          `Bearer realm="http://${url.host}/v2/auth",service="cloudflare-docker-proxy"`
+          `Bearer realm="http://${url.host}/v2/auth",service="docker"`
         );
       } else {
         headers.set(
           "Www-Authenticate",
-          `Bearer realm="https://${url.hostname}/v2/auth",service="cloudflare-docker-proxy"`
+          `Bearer realm="https://${url.hostname}/v2/auth",service="docker"`
         );
       }
       return new Response(JSON.stringify({ message: "UNAUTHORIZED" }), {
