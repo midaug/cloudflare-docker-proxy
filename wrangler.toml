@@ -1,4 +1,4 @@
-name = "cloudflare-docker-proxy"
+name = "docker"
 compatibility_date = "2023-12-01"
 
 [dev]
@@ -11,9 +11,9 @@ MODE = "debug"
 TARGET_UPSTREAM = "https://registry-1.docker.io"
 
 [env.production]
-name = "cloudflare-docker-proxy"
+name = "docker"
 routes = [
-  { pattern = "docker.midaug.link", custom_domain = true },
+  { pattern = "docker.midaug.workers.dev", custom_domain = true },
 ]
 
 [env.production.vars]
@@ -21,7 +21,7 @@ MODE = "production"
 TARGET_UPSTREAM = ""
 
 [env.staging]
-name = "cloudflare-docker-proxy-staging"
+name = "docker-staging"
 route = { pattern = "docker-staging.libcuda.so", custom_domain = true }
 
 [env.staging.vars]
