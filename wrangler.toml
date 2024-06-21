@@ -13,7 +13,13 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "docker"
 routes = [
-  { pattern = "docker.midaug.workers.dev", custom_domain = true },
+  { pattern = "docker.docker.800443.xyz", custom_domain = true },
+  { pattern = "quey.docker.800443.xyz", custom_domain = true },
+  { pattern = "gcr.docker.800443.xyz", custom_domain = true },
+  { pattern = "k8s-gcr.docker.800443.xyz", custom_domain = true },
+  { pattern = "k8s.docker.800443.xyz", custom_domain = true },
+  { pattern = "ghcr.docker.800443.xyz", custom_domain = true },
+  { pattern = "cloudsmith.docker.800443.xyz", custom_domain = true },
 ]
 
 [env.production.vars]
@@ -22,7 +28,7 @@ TARGET_UPSTREAM = ""
 
 [env.staging]
 name = "docker-staging"
-route = { pattern = "docker-staging.libcuda.so", custom_domain = true }
+route = { pattern = "docker-staging.docker.800443.xyz", custom_domain = true }
 
 [env.staging.vars]
 MODE = "staging"
