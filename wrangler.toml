@@ -14,6 +14,7 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 name = "docker"
 routes = [
   { pattern = "docker.midaug.link", custom_domain = true },
+
   { pattern = "hub.docker.800443.xyz", custom_domain = true },
   { pattern = "quey.docker.800443.xyz", custom_domain = true },
   { pattern = "gcr.docker.800443.xyz", custom_domain = true },
@@ -21,6 +22,14 @@ routes = [
   { pattern = "k8s.docker.800443.xyz", custom_domain = true },
   { pattern = "ghcr.docker.800443.xyz", custom_domain = true },
   { pattern = "cloudsmith.docker.800443.xyz", custom_domain = true },
+  
+  { pattern = "hub.midaug.us.kg", custom_domain = true },
+  { pattern = "quey.midaug.us.kg", custom_domain = true },
+  { pattern = "gcr.midaug.us.kg", custom_domain = true },
+  { pattern = "k8s-gcr.midaug.us.kg", custom_domain = true },
+  { pattern = "k8s.midaug.us.kg", custom_domain = true },
+  { pattern = "ghcr.midaug.us.kg", custom_domain = true },
+  { pattern = "cloudsmith.midaug.us.kg", custom_domain = true },
 ]
 
 [env.production.vars]

@@ -8,6 +8,7 @@ const dockerHub = "https://registry-1.docker.io";
 const routes = {
   // production
   "docker.midaug.link": dockerHub,
+
   "hub.docker.800443.xyz": dockerHub,
   "quay.docker.800443.xyz": "https://quay.io",
   "gcr.docker.800443.xyz": "https://gcr.io",
@@ -15,6 +16,14 @@ const routes = {
   "k8s.docker.800443.xyz": "https://registry.k8s.io",
   "ghcr.docker.800443.xyz": "https://ghcr.io",
   "cloudsmith.docker.800443.xyz": "https://docker.cloudsmith.io",
+
+  "hub.midaug.us.kg": dockerHub,
+  "quay.midaug.us.kg": "https://quay.io",
+  "gcr.midaug.us.kg": "https://gcr.io",
+  "k8s-gcr.midaug.us.kg": "https://k8s.gcr.io",
+  "k8s.midaug.us.kg": "https://registry.k8s.io",
+  "ghcr.midaug.us.kg": "https://ghcr.io",
+  "cloudsmith.midaug.us.kg": "https://docker.cloudsmith.io",
 
   // staging
   "docker-staging.docker.800443.xyz": dockerHub,
