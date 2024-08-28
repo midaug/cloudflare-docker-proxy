@@ -16,7 +16,7 @@ routes = [
   { pattern = "docker.midaug.link", custom_domain = true },
 
   { pattern = "hub.docker.800443.xyz", custom_domain = true },
-  { pattern = "quey.docker.800443.xyz", custom_domain = true },
+  { pattern = "quay.docker.800443.xyz", custom_domain = true },
   { pattern = "gcr.docker.800443.xyz", custom_domain = true },
   { pattern = "k8s-gcr.docker.800443.xyz", custom_domain = true },
   { pattern = "k8s.docker.800443.xyz", custom_domain = true },
@@ -24,7 +24,7 @@ routes = [
   { pattern = "cloudsmith.docker.800443.xyz", custom_domain = true },
   
   { pattern = "hub.midaug.us.kg", custom_domain = true },
-  { pattern = "quey.midaug.us.kg", custom_domain = true },
+  { pattern = "quay.midaug.us.kg", custom_domain = true },
   { pattern = "gcr.midaug.us.kg", custom_domain = true },
   { pattern = "k8s-gcr.midaug.us.kg", custom_domain = true },
   { pattern = "k8s.midaug.us.kg", custom_domain = true },
