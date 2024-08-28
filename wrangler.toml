@@ -13,8 +13,6 @@ TARGET_UPSTREAM = "https://registry-1.docker.io"
 [env.production]
 name = "docker"
 routes = [
-  { pattern = "docker.midaug.link", custom_domain = true },
-
   { pattern = "hub.docker.800443.xyz", custom_domain = true },
   { pattern = "quay.docker.800443.xyz", custom_domain = true },
   { pattern = "gcr.docker.800443.xyz", custom_domain = true },
